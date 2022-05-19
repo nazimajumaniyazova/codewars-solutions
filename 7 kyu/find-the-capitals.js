@@ -12,8 +12,8 @@ let capitals = function(word) {
     return word.split('').reduce((total, elem, index) => { //1. split the world into the array of letters 2. loop the array 
         if (elem === elem.toUpperCase()) { //the element(letter) equal its uppercase version, it means that the letter is in UpperCase
             total.push(index) //push uppercase letter index into total array
-            return total
+            return total // then return this array 
         }
-        return total
+        return total //else just return the total array without doing any actions 
     }, [])
 };
